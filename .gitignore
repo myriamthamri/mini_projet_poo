@@ -1,0 +1,66 @@
+# -----------------------------
+# PYTHON
+# -----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Logs
+*.log
+
+# -----------------------------
+# CLIENT
+# -----------------------------
+client/__pycache__/
+client/*.pyc
+
+# If client generates temp files:
+client/tmp/
+client/cache/
+
+# -----------------------------
+# SERVER
+# -----------------------------
+server/__pycache__/
+server/*.pyc
+server/tmp/
+server/cache/
+
+# -----------------------------
+# DOCKER
+# -----------------------------
+*.pid
+*.seed
+*.bak
+*.backup
+
+# -----------------------------
+# EDITORS / OS
+# -----------------------------
+# VSCode
+.vscode/
+# JetBrains
+.idea/
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# OTHER
+# -----------------------------
+# Temporary files
+*.swp
+*.swo
