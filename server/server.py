@@ -1,5 +1,6 @@
 import socket
 import threading
+import sys
 from .manager import GestionnaireTaches
 
 HOST = "0.0.0.0"
@@ -16,7 +17,7 @@ class ServeurTaches:
         self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.sock.bind((self.host, self.port))
         self.sock.listen(8)
-        print(f"[SERVEUR] écoute sur {self.host}:{self.port}")
+        print(f"[SERVEUR] écoute sur {self.host}:{self.port}",flush=True)
 
     def start(self):
         try:
